@@ -1,0 +1,9 @@
+.toasts { position:fixed; bottom:22px; right:22px; z-index:9999; display:flex; flex-direction:column; gap:8px; max-width:360px; }
+.toast { display:flex; align-items:center; gap:10px; padding:12px 14px; border-radius:12px; font-size:13px; font-weight:600; box-shadow:var(--shadow-lg); border:1.5px solid transparent; background:var(--bg2); }
+.toast span { flex:1; color:var(--text); font-weight:500; }
+.toast-success { border-color:rgba(16,185,129,.25); color:var(--green); }
+.toast-error   { border-color:rgba(239,68,68,.25);  color:var(--red);   }
+.toast-info    { border-color:rgba(59,110,248,.25);  color:var(--blue);  }
+.toast-warning { border-color:rgba(245,158,11,.25);  color:var(--orange);}
+.toast-x { background:none; border:none; color:var(--text3); cursor:pointer; display:flex; align-items:center; padding:2px; border-radius:4px; transition:color var(--t); }
+.toast-x:hover { color:var(--text); }
