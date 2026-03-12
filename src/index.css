@@ -130,3 +130,13 @@ select.inp option { background:var(--bg2); }
 .role-admin   { background:#fef3c7; color:#92400e; }
 .role-teacher { background:#ede9fe; color:#5b21b6; }
 .role-student { background:#ecfdf5; color:#065f46; }
+
+/* ── Global mobile ── */
+@media (max-width:768px) {
+  .page { padding:16px 14px; }
+  .ph   { margin-bottom:16px; }
+  .pt   { font-size:18px; }
+  .fr   { grid-template-columns:1fr; }
+  .modal { max-width:100%; margin:0; border-radius:16px 16px 0 0; position:fixed; bottom:0; left:0; right:0; max-height:92vh; }
+  .overlay { align-items:flex-end; padding:0; }
+}

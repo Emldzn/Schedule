@@ -46,3 +46,13 @@
 .gp-del { position:absolute; top:7px; right:7px; width:20px; height:20px; border-radius:4px; border:none; background:transparent; color:var(--text3); display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0; transition:all var(--t); }
 .gp-card:hover .gp-del { opacity:1; }
 .gp-del:hover { background:var(--red-l); color:var(--red); }
+
+@media (max-width:768px) {
+  .tc-row { flex-wrap:wrap; gap:10px; }
+  .tc-load { width:100%; }
+  .sc-grid { grid-template-columns:1fr 1fr; }
+  .gp-toolbar { flex-direction:column; align-items:stretch; }
+  .gp-toolbar .search-wrap { max-width:100%; }
+  .gp-toolbar .inp { width:100%; }
+  .gp-crs-row { flex-direction:column; gap:8px; }
+}

@@ -33,3 +33,12 @@
 .db-chip:hover { transform:translateY(-1px); box-shadow:var(--shadow-sm); }
 
 @media(max-width:900px){.db-cards{grid-template-columns:1fr 1fr}.db-grid{grid-template-columns:1fr}.db-groups-card{grid-column:1}}
+
+@media (max-width:768px) {
+  .db-cards { grid-template-columns:1fr 1fr; gap:10px; }
+  .db-card  { padding:14px; }
+  .db-card-val { font-size:22px; }
+  .db-grid  { grid-template-columns:1fr; }
+  .db-groups-card { grid-column:1; }
+  .db-student-banner,.db-teacher-banner { flex-direction:column; align-items:flex-start; gap:12px; }
+}

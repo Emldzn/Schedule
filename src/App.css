@@ -1,2 +1,7 @@
 .layout { display:flex; height:100vh; overflow:hidden; }
-.main { flex:1; overflow-y:auto; background:var(--bg); }
+.main   { flex:1; overflow-y:auto; background:var(--bg); }
+
+@media (max-width:768px) {
+  .layout { flex-direction:column; height:100vh; }
+  .main   { padding-top:52px; padding-bottom:60px; }
+}
